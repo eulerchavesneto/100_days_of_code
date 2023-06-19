@@ -23,15 +23,13 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to the treasure island.")
 print("Your mission is to find the treasure.")
 
-direction = input("Which way do you want to go? LEFT or RIGHT")
-direction = direction.lower()
+direction = input("Which way do you want to go? LEFT or RIGHT\n").lower()
 
 if direction == "left":
-    direction = input("You found a river. Do you want to SWIM or WAIT for a boat?")
-    direction = direction.lower()
+    direction = input("You found a river. Do you want to SWIM or WAIT for a boat?\n").lower()
     if direction == "wait":
-        direction = input("You found 3 doors! Which one do you choose? RED, BLUE or YELLOW?")
-        direction = direction.lower()
+        direction = input("You found 3 doors! Which one do you choose? RED, BLUE or YELLOW?\n").lower()
+
         if direction == "yellow":
             print("You found the gold! You won the game! Congratulations!")
         elif direction == "red":
